@@ -21,14 +21,24 @@ img{
     font-weight: 900;
 }
 
+/* ---------------/ Header /---------------- */
+
 #background{
-    background-image: url(./img/hero-bg.png);
+    background-image: url(./img/hero-bg.svg);
     background-color: #404EED;
-    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    height: 425px;
+    position: relative;
+    z-index: 1;
 }
 
 .white-font{
     color: white;
+}
+
+p.white-font{
+    line-height: 1.1rem;
 }
 
 menu{
@@ -36,17 +46,16 @@ menu{
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem 6rem;
-    font-size: 0.6em;
+    font-size: 0.6rem;
 }
 
-menu>button{
-    font-size: 0.8em;
-    padding: 0.7em 1.6em;
-    border: 1px solid #4351ED;
+.button-small{
+    font-size: 0.5rem;
+    padding: 0.30rem 0.6rem;
     border-radius: 40px;
 }
 
-menu>img{
+.logo-height{
     height: 1.2rem;
 }
 
@@ -57,14 +66,19 @@ nav{
     gap: 1.5rem;
 }
 
+
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 5rem;
+    margin: 3rem 20rem;
+    position: relative;
+    z-index: 2;
 }
+
+
 
 #header-button{
     display: flex;
@@ -74,11 +88,201 @@ header{
 
 header>p{
     text-align: center;
-    padding: 0 19rem;
-    font-size: 0.7em;
+    font-size: 0.6rem;
+    margin: 0 .9rem;
+}
+
+.img-download{
+    width: 1.25em;
+    margin-right: 0.75em;
+}
+
+.button{
+    padding: 0.75em 1.25em;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.button-border{
+    border: 1px solid #4351ED;
+}
+
+#black-button{
+    background-color: #23272A;
+    color: white;
+}
+
+img[alt="hero-left"]{
+    width: 25%;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    z-index: 3;
+}
+
+img[alt="hero-right"]{
+    width: 25%;
+    position: absolute;
+    bottom: 1%;
+    left: 70%;
+    z-index: 3;
+}
+
+    
+/* ---------------/ Header /---------------- */
+
+/* ---------------/ Main /------------------ */
+
+.flex-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 11rem;
+}
+
+.flex-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem;
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 11rem;
+}
+
+.section-color{
+    background-color: #F6F6F6;
+}
+
+img[alt="info1"] {
+    width: 425px;
+}
+
+img[alt="info2"] {
+    width: 425px;
+}
+
+img[alt="info3"] {
+    width: 425px;
+}
+
+img[alt="info-full"] {
+    width: 550px;
+}
+
+.font-size{
+    font-size: .6em;
+    line-height: 0.9rem;
+}
+
+.flex-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding: 3rem 11rem 0 11rem;
+}
+
+div.flex-end>p{
+    text-align: center;
+    padding: 0 11rem;
+}
+
+.button-blue{
+    background-color: #5865F2;
+    color: white;
+}
+
+button.button-blue>img{
+    filter: invert(100%);
+}
+
+.flex-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+img[alt="stars"] {
+    width: 400px;
+    position: relative;
+    top: 50px;
+}
+
+div.flex-button{
+    padding-bottom: 3rem;
 }
 
 
+/* ---------------/ Main /------------------ */
 
+/* ---------------/ Footer /------------------ */
 
-/* ---------------/ Header /---------------- */
+footer{
+    background-color: #23272A;
+    height: 300px;
+    padding: 3rem 10rem;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: .5em;
+    margin-bottom: 1rem;
+}
+
+div#select img{
+    width: 17px;
+    margin: 0 .4rem;
+}
+
+footer p {
+    font-size: .5em;
+    color: white;
+    line-height: .9rem;
+}
+
+.title-p{
+    color: #5D65E7;
+    margin-bottom: 1rem;
+
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#end-page{
+    background-color: #23272A;
+    padding: 1rem 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#line{
+    background-color: #404EED;
+    height: 2px;
+}
+
+#padding-line{
+    padding: 0 14rem;
+    background-color: #23272A;
+}
+
