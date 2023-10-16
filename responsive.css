@@ -1,83 +1,115 @@
-
-
+#hamburger{
+    display: none;
+}
 
 @media screen and (max-width: 960px){
 
-*{
+    header nav>menu{
+        display: none;
+    }
+
+    #hamburger{
+        display: unset;
+    }
+
+    header nav{
+        gap: 1rem;
+    }
+
+    header nav>button{
+        margin-left: auto;
+    }
+
+    header>.content{
+        padding: 0 1.5rem;
+    }
+
+    .jumbotron{
+        align-items: flex-start;
+        padding: 0;
+        width: 60%;
+    }
+
+    .jumbotron p{
+        text-align: left;
         margin: 0;
-        padding: 0;   
-}
+    }
 
-nav{
-    display: none;
-}
+    #header-button{
+        flex-direction: column;
+    }
 
-menu{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    margin-bottom: 4rem;
-}
+    .hero-left{
+        display: none;
+    }
 
-img.logo-height{
-    height: 2rem;
-}
+    .hero-right{
+        margin-left: auto;
+        margin-right: 2rem;
+    }
 
-img[alt="hero-left"]{
-    display: none;
-}
+    .flex-down{
+        width: unset;
+    }
 
-button#black-button{
-    display: none;
-}
+    .text-image{
+        padding: 3rem 1.5rem;
+    }
 
-header{
-    margin: 1rem;   
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
+    .image-full{
+        padding: 3rem 1.5rem 0;
+    }
 
-h1{
-    font-size: 3.5rem;
-    padding-right: 5rem;
-    line-height: 3rem;
-}
+    footer{
+        padding: 1.5rem;
+    }
 
+    .menus{
+        row-gap: 1rem;
+        flex-wrap: wrap;
+    }
 
-
-header p{
-    line-height: 50px;
-    text-align: left;
-    font-size: 0.8rem;
-    padding: 2rem 15rem 2rem 0;
-}
-
-div#background{
-    height: 70vh;
-}
-
-div#header-button>button.button-border {
-    width: 325px;
-    height: 60px;
-    font-size: 1rem;
-}
-
-img[alt="hero-right"]{
-    width: 60%;
-    position: relative;
-    left: 40%;
-    bottom: 147px;
-}
-
-div.flex-down{
-    
-}
+    .menus>menu{
+        width: calc(100% / 2);
+        flex-shrink: 0;
+    }
 
 }
 
 @media screen and (max-width: 480px){
 
-
+    header{
+        height: 70vh;
+    }
     
+    .hero-left{
+        display: unset;
+    }
+
+    .hero-right{
+        display: none;
+    }
+
+    .characters{
+        justify-content: center;
+    }
+
+    .characters figure{
+        height: 40%;
+    }
+
+    .jumbotron{
+        margin: 0;
+    }
+
+    .text-image{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu-section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
 }

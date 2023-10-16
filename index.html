@@ -5,164 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
     
 <body>
 
-    <div id="background">
+    <header>
 
-        <menu>
-            <img src="./img/logo.svg" class="logo-height" alt>
-            <nav class="white-font">
-                <p>Download</p>
-                <p>Nitro</p>
-                <p>Discover</p>
-                <p>Safety</p>
-                <p>Support</p>
-                <p>Blog</p>
-                <p>Careers</p>
+        <section class="characters">
+            <figure class="hero-left">
+                <img src="./img/hero-left.svg" alt="hero-left">
+            </figure>
+            <figure class="hero-right">
+                <img src="./img/hero-right.svg" alt="hero-right">
+            </figure>
+        </section>
+
+        <article class="content">
+
+            <nav>
+                <img src="./img/logo.svg" class="logo-height" alt>
+                <menu class="white-font">
+                    <li>Download</li>
+                    <li>Nitro</li>
+                    <li>Discover</li>
+                    <li>Safety</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </menu>
+                <button class="button-border button-small">Open Discord</button>
+                <img id="hamburger" src="./img/hamburger-menu.svg" alt="">
             </nav>
-            <button class="button-border button-small">Open Discord</button>
-        </menu>
 
-        <header>
-            <h1 class="extra-bold white-font">IMAGINE A PLACE...</h1>
-            <p class="white-font">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
-            <div id="header-button">
-                <button class="button button-border"> <img src="./img/download.svg" class="img-download">Download for Windows</button>
-                <button class="button" id="black-button">Open Discord in your browser</button>
-            </div>
-        </header>
+            <section class="jumbotron">
+                <h1 class="extra-bold white-font">IMAGINE A PLACE...</h1>
+                <p class="white-font">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+                <div id="header-button">
+                    <button class="button button-border"> <img src="./img/download.svg" class="img-download">Download for Windows</button>
+                    <button class="button" id="black-button">Open Discord in your browser</button>
+                </div>
+            </section>
 
-        <div>
-            <img src="./img/hero-left.svg" alt="hero-left">
-            <img src="./img/hero-right.svg" alt="hero-right">
-        </div>
-        
-    </div>
+        </article>
+
+
+    </header>
         
 
-        <main>
+    <main>
 
-            <div class="flex-right">
-                <img src="./img/info1.svg" alt="info1">
-                <div class="flex-down">
-                    <h2>Create an invite-only place where you belong</h2>
-                    <p class="font-size">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+        <section class="text-image">
+            <img src="./img/info1.svg" alt="info1">
+            <div class="flex-down">
+                <h2>Create an invite-only place where you belong</h2>
+                <p class="font-size">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+            </div>
+        </section>
+
+        <section class="text-image reverse section-color">
+            <img src="./img/info2.svg" alt="info2">
+            <div class="flex-down">
+                <h2>Where hanging out is easy</h2>
+                <p class="font-size">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+            </div>
+        </section>
+
+        <section class="text-image">
+            <img src="./img/info3.svg" alt="info3">
+            <div class="flex-down">
+                <h2>From few to a fandom</h2>
+                <p class="font-size">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+            </div>
+        </section>
+
+        <section class="image-full section-color">
+            <h2 class="extra-bold">RELIABLE TECH FOR STAYING CLOSE</h2>
+            <p class="font-size" style="text-align: center;">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+            <img src="./img/info-full.svg" alt="info-full">
+        </section>
+
+        <section class="flex-button section-color">
+            <h4>Ready to start your journey?</h4>
+            <button class="download button button-border button-blue">
+                <img src="./img/download.svg" class="img-download">
+                Download for Windows
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+
+            <section class="menu-section">
+                <div id="select">
+                    <select name="country" id="country">
+                        <option value="eng">English, USA</option>
+                        <option value="ita">Italian</option>
+                        <option value="alb">Albanian</option>
+                    </select>
+                    <div>
+                        <img src="./img/social1.svg" alt>
+                        <img src="./img/social2.svg" alt>
+                        <img src="./img/social3.svg" alt>
+                        <img src="./img/social4.svg" alt>
+                        <img src="./img/social5.svg" alt>
+                    </div>   
                 </div>
-            </div>
-
-            <div class="flex-left section-color">
-                <img src="./img/info2.svg" alt="info2">
-                <div class="flex-down">
-                    <h2>Where hanging out is easy</h2>
-                    <p class="font-size">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+                <div class="menus">
+                    <menu>
+                        <li class="title-p">Product</li>
+                        <li>Download</li>
+                        <li>Nitro</li>
+                        <li>Status</li>
+                        <li>App Directory</li>
+                    </menu>
+                    
+                    <menu>
+                        <li class="title-p">Company</li>    
+                        <li>About</li>    
+                        <li>Jobs</li>    
+                        <li>Brand</li>    
+                        <li>Newsroom</li>    
+                    </menu>
+        
+                    <menu>
+                        <li class="title-p">Resources</li>
+                        <li>College</li>
+                        <li>Support</li>
+                        <li>Safety</li>
+                        <li>Blog</li>
+                        <li>Feedback</li>
+                        <li>Developers</li>
+                        <li>StreamKit</li>
+                        <li>Creators</li>
+                        <li>Community</li>
+                        <li>Official 3rd Party Merch</li>
+                    </menu>
+        
+                    <menu>
+                        <li class="title-p">Policies</li>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                        <li>Cookie Settings</li>
+                        <li>Guidelines</li>
+                        <li>Acknowledgements</li>
+                        <li>Licenses</li>
+                        <li>Company Information</li>
+                    </menu>
                 </div>
-            </div>
+            </section>
 
-            <div class="flex-right">
-                <img src="./img/info3.svg" alt="info3">
-                <div class="flex-down">
-                    <h2>From few to a fandom</h2>
-                    <p class="font-size">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
-                </div>
-            </div>
+            <nav>
+                <img src="./img/logo.svg" class="logo-height" alt>
+                <button class="button-border button-small button-blue">Open Discord</button>
+            </nav>
 
-            <div class="section-color flex-end">
-                <h2 class="extra-bold">RELIABLE TECH FOR STAYING CLOSE</h2>
-                <p class="font-size">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
-                <img src="./img/info-full.svg" alt="info-full">
-            </div>
-
-            <div class="section-color flex-button">
-                <img src="./img/stars.svg" alt="stars">
-                <h4>Ready to start your journey?</h4>
-                <button class="download button button-border button-blue"> <img src="./img/download.svg" class="img-download">Download for Windows</button>
-            </div>
-
-        </main>
-
-    <footer class="flex-footer">
-
-            <div id="select">
-                <select name="country" id="country">
-                    <option value="eng">English, USA</option>
-                    <option value="ita">Italian</option>
-                    <option value="alb">Albanian</option>
-                </select>
-                <div>
-                    <img src="./img/social1.svg" alt>
-                    <img src="./img/social2.svg" alt>
-                    <img src="./img/social3.svg" alt>
-                    <img src="./img/social4.svg" alt>
-                    <img src="./img/social5.svg" alt>
-                </div>   
-            </div>
-            <div>
-                <p class="title-p">Product</p>
-                <p>Download</p>
-                <p>Nitro</p>
-                <p>Status</p>
-                <p>App Directory</p>
-            </div>
-            
-            <div>
-                <p class="title-p">Company</p>    
-                <p>About</p>    
-                <p>Jobs</p>    
-                <p>Brand</p>    
-            <p>Newsroom</p>    
-            </div>
-
-            <div>
-                <p class="title-p">Resources</p>
-                <p>College</p>
-                <p>Support</p>
-                <p>Safety</p>
-                <p>Blog</p>
-                <p>Feedback</p>
-                <p>Developers</p>
-                <p>StreamKit</p>
-                <p>Creators</p>
-                <p>Community</p>
-                <p>Official 3rd Party Merch</p>
-            </div>
-
-            <div>
-                <p class="title-p">Policies</p>
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>Cookie Settings</p>
-                <p>Guidelines</p>
-                <p>Acknowledgements</p>
-                <p>Licenses</p>
-                <p>Company Information</p>
-            </div>
-            
     </footer>
-
-    <div id="padding-line"><div id="line"></div></div>
-
-    <div id="end-page">
-
-        <img src="./img/logo.svg" class="logo-height" alt>
-        <button class="button-border button-small button-blue">Open Discord</button>
-
-    </div>
-
-
-
-
-    
-
-    
 
 </body>
 </html>

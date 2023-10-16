@@ -23,14 +23,13 @@ img{
 
 /* ---------------/ Header /---------------- */
 
-#background{
+header{
     background-image: url(./img/hero-bg.svg);
     background-color: #404EED;
     background-position: center;
     background-size: cover;
     height: 425px;
     position: relative;
-    z-index: 1;
 }
 
 .white-font{
@@ -41,11 +40,11 @@ p.white-font{
     line-height: 1.1rem;
 }
 
-menu{
+nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 0;
     font-size: 0.6rem;
 }
 
@@ -59,7 +58,8 @@ menu{
     height: 1.2rem;
 }
 
-nav{
+header menu{
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,15 +67,14 @@ nav{
 }
 
 
-header{
+.jumbotron{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 3rem 20rem;
-    position: relative;
-    z-index: 2;
+    margin: auto 0;
+    padding: 0 10%;;
 }
 
 
@@ -86,7 +85,7 @@ header{
     gap: 1rem;
 }
 
-header>p{
+.jumbotron>p{
     text-align: center;
     font-size: 0.6rem;
     margin: 0 .9rem;
@@ -112,33 +111,51 @@ header>p{
     color: white;
 }
 
-img[alt="hero-left"]{
-    width: 25%;
+.characters{
     position: absolute;
-    bottom: 1%;
-    left: 5%;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30%;
 }
 
-img[alt="hero-right"]{
-    width: 25%;
-    position: absolute;
-    bottom: 1%;
-    left: 70%;
-    z-index: 3;
+.characters figure{
+    height: 60%;
 }
 
-    
+.characters img{
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+header>.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* ---------------/ Header /---------------- */
 
 /* ---------------/ Main /------------------ */
 
-.flex-right{
+.text-image{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 3rem 11rem;
+    padding: 3rem 10%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 .flex-down{
@@ -148,15 +165,7 @@ img[alt="hero-right"]{
     align-items: center;
     gap: 1rem;
     margin: 2.5rem;
-}
-
-.flex-left{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 3rem 11rem;
+    width: 25%;
 }
 
 .section-color{
@@ -184,13 +193,13 @@ img[alt="info-full"] {
     line-height: 0.9rem;
 }
 
-.flex-end{
+.image-full{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .7rem;
-    padding: 3rem 11rem 0 11rem;
+    padding: 3rem 10% 0;
 }
 
 div.flex-end>p{
@@ -213,12 +222,17 @@ button.button-blue>img{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    padding: 1.5rem 0;
 }
 
-img[alt="stars"] {
-    width: 400px;
-    position: relative;
-    top: 50px;
+.flex-button h4{
+    background-image: url(./img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: .5rem 0;
+    width: 100%;
+    text-align: center;
 }
 
 div.flex-button{
@@ -232,8 +246,7 @@ div.flex-button{
 
 footer{
     background-color: #23272A;
-    height: 300px;
-    padding: 3rem 10rem;
+    padding: 1.5rem 15%;
 }
 
 select{
@@ -261,28 +274,23 @@ footer p {
 
 }
 
-.flex-footer {
+.menu-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 4rem;
+    border-bottom: 1px solid #404EED;
+    padding-bottom: 1.5rem;
 }
 
-#end-page{
-    background-color: #23272A;
-    padding: 1rem 14rem;
+.menus{
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-#line{
-    background-color: #404EED;
-    height: 2px;
+.menus>menu{
+    list-style-type: none;
+    color: white;
+    font-size: .6rem;
+    width: calc(100% / 4);
 }
-
-#padding-line{
-    padding: 0 14rem;
-    background-color: #23272A;
-}
-
